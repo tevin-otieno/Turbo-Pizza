@@ -12,83 +12,104 @@
     <title>Document</title>
 </head>
 <body class="container">
-    <form action="">
-        <p>Size of Pizza</p>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="size" id="large" value="">
-            <label class="form-check-label" for="large">Large</label>   
+    <div class="row">
+        <div class="col-md-6">
+            <form action="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p>Size of Pizza</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="size" id="large" value="1000">
+                                <label class="form-check-label" for="large">Large</label>   
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="size" id="medium" value="800">
+                                <label class="form-check-label" for="medium">Medium</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="size" id="small" value="600">
+                                <label class="form-check-label" for="small">Small</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p>Crust Preference</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="size" id="crispy" value="1.08">
+                                <label class="form-check-label" for="crispy">Crispy</label>     
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="size" id="stuffed" value="1.2">
+                                <label class="form-check-label" for="stuffed">Stuffed</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="size" id="gluttenFree" value="1.4">
+                                <label class="form-check-label" for="gluttenFree">Glutten free</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p style="text-align: center;">Toppings</p>
+                <div class="container">
+                    <div class="row row-cols-2">
+                        <div class="form-check col">
+                            <input class="form-check-input" type="checkbox" id="pepperoni" name="topping" value="1.9">
+                            <label class="form-check-label" for="pepperoni">Pepperoni</label>
+                        </div>
+                        <div class="form-check col">
+                            <input class="form-check-input" type="checkbox" id="mushrooms" name="topping" value="1.5">
+                            <label class="form-check-label" for="mushrooms">Mushrooms</label>
+                        </div>
+                        <div class="form-check col">
+                            <input class="form-check-input" type="checkbox" id="onions" name="topping" value="1.4">
+                            <label class="form-check-label" for="onions">Onions</label>
+                        </div>
+                        <div class="form-check col">
+                            <input class="form-check-input" type="checkbox" id="sausages" name="topping" value="1.8">
+                            <label class="form-check-label" for="sausages">Sausages</label>
+                        </div>
+                        <div class="form-check col">
+                            <input class="form-check-input" type="checkbox" id="bacon" name="topping" value="1.7">
+                            <label class="form-check-label" for="bacon">Bacon</label>
+                        </div>
+                        <div class="form-check col">
+                            <input class="form-check-input" type="checkbox" id="eCheese" name="topping" value="1.6">
+                            <label class="form-check-label" for="eCheese">Extra Cheese</label>
+                        </div>
+                        <div class="form-check col">
+                            <input class="form-check-input" type="checkbox" id="bOlives" name="topping" value="1.2">
+                            <label class="form-check-label" for="bOlives">Black Olives</label>
+                        </div>
+                        <div class="form-check col">
+                            <input class="form-check-input" type="checkbox" id="gPeppers" name="topping" value="1.1">
+                            <label class="form-check-label" for="gPeppers">Green Peppers</label>
+                        </div>
+                        <div class="form-check col">
+                            <input class="form-check-input" type="checkbox" id="pinapples" name="topping" value="1.3">
+                            <label class="form-check-label" for="pinapples">Pinapples</label>
+                        </div>
+                        <div class="form-check col">
+                            <input class="form-check-input" type="checkbox" id="spinach" name="topping" value="1.11">
+                            <label class="form-check-label" for="spinach">Spinach</label>
+                        </div>
+                    </div>
+                </div>
+                <p>Delivery</p>
+                <div>
+                    <input type="radio" name="" id="">
+                </div>
+                <p>Location</p>
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">to</span>
+                    <input class="form-control" type="text" name="location" id="location" placeholder="Mathew street house 45 , nairobi">
+                </div>
+                <button>Another Pizza</button>
+                <button type="submit">Order Now</button>
+            </form>
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="size" id="medium" value="">
-            <label class="form-check-label" for="medium">Medium</label>
+        <div class="col-md-6">
+            <h1>Pizza</h1>
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="size" id="small" value="">
-            <label class="form-check-label" for="small">Small</label>
-        </div>
-        <p>Crust Preference</p>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="size" id="crispy" value="">
-            <label class="form-check-label" for="crispy">Crispy</label>     
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="size" id="stuffed" value="">
-            <label class="form-check-label" for="stuffed">Stuffed</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="size" id="gluttenFree" value="">
-            <label class="form-check-label" for="gluttenFree">Glutten free</label>
-        </div>
-        <p>Toppings</p>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="pepperoni" name="topping" value="">
-            <label class="form-check-label" for="pepperoni">Pepperoni</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="mushrooms" name="topping" value="">
-            <label class="form-check-label" for="mushrooms">Mushrooms</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="onions" name="topping" value="">
-            <label class="form-check-label" for="onions">Onions</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="sausages" name="topping" value="">
-            <label class="form-check-label" for="sausages">Sausages</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="bacon" name="topping" value="">
-            <label class="form-check-label" for="bacon">Bacon</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="eCheese" name="topping" value="">
-            <label class="form-check-label" for="eCheese">Extra Cheese</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="bOlives" name="topping" value="">
-            <label class="form-check-label" for="bOlives">Black Olives</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gPeppers" name="topping" value="">
-            <label class="form-check-label" for="gPeppers">Green Peppers</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="pinapples" name="topping" value="">
-            <label class="form-check-label" for="pinapples">Pinapples</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="spinach" name="topping" value="">
-            <label class="form-check-label" for="spinach">Spinach</label>
-        </div>
-        <p>Delivery</p>
-        <div>
-            <input type="radio" name="" id="">
-        </div>
-        <p>Location</p>
-        <div class="input-group">
-            <span for="location">Destination</label>
-            <input class="form-control" type="text" name="location" id="location">
-        </div>
-    </form>
+    </div>
 </body>
 </html>
