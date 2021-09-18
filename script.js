@@ -5,3 +5,18 @@ class Pizza {
         this.topping = topping;
     };
 };
+
+let pPizza = new Pizza('Medium', 'stuffed', 'pepperoni')
+console.log(pPizza)
+
+$(document).ready(function() {
+    $("#pizza-form").submit(function(event) {
+      event.preventDefault();
+      var size = $("select#size").val();
+      var toppings = $("#toppings").val();
+      var myPizzaOrder = new Pizzaorder(size, toppings);
+      var cost = myPizzaOrder.cost();
+      $("#price").text("$" + cost);
+      $(".show-pizza").show();
+    });
+  });
