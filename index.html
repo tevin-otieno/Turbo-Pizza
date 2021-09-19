@@ -11,7 +11,13 @@
     <script defer src="./script.js"></script>
     <title>Document</title>
 </head>
-<body class="container">
+<body class="container glass">
+    <div class="position-relative">
+        <h1>Turbo Pizza</h1>
+        <div class="position-absolute top-0 end-0"s>
+            <button type="button" class="btn btn-outline-danger">About</button>
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-6">
             <form action="" id="pizza-form">
@@ -114,7 +120,9 @@
                     <span class="input-group-text" id="location">Location</span>
                     <input class="form-control" type="text" name="location" id="location" placeholder="Mathew street house 45 , nairobi">
                 </div>
-                <button class="btn btn-outline-warning" id="addPizza">Add Pizza to list</button>
+                <div class="mt-3">
+                    <button class="btn btn-outline-warning" id="addPizza">Add Pizza to list</button>
+                </div>
                     <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
