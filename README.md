@@ -14,6 +14,8 @@ This is a pizza web app dedicated to make your own custom pizza. You can make yo
 
 To use this website you need ofcourse your pc or mobile launch a browser then click on this live link. If you want to continue development of the website you can fork the website then clone it on your repository. For the client to use the website all they have to do is to click the link below have a good imagination or powerful idea of the pizza create and arm themselves with a creditcard to pay an the checkout.
 
+[https://tevin-otieno.github.io/Turbo-Pizza/](https://tevin-otieno.github.io/Turbo-Pizza/)
+
 ## Milestones passed
 
 Realy understood the mechanism that javascript classes in use and the jquery selector. There was this talk that I heard that programming is all about selectors, conditions and looping. There was also a discovery of the bootstrap popup window under the modal window
