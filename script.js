@@ -1,3 +1,4 @@
+//pizza constractor to holad the name size crust and topping.
 class Pizza {
     constructor (name, size, crust, number, topping){
         this.name = name;
@@ -10,12 +11,14 @@ class Pizza {
     };
 };
 
+//total order constractor.
 class Total {
     constructor (number){
         this.number = number.reduce((previous, current) => {return parseInt(previous) + parseInt(current);});
     }
 };
 
+//Debugging data
 //let pPizza = new Pizza('New moon', '1000', '1.1', ['1.2','1.3','1.4','1.5'])
 //console.log(pPizza)
 //console.log(pPizza.topping)
@@ -34,6 +37,8 @@ $(document).ready(function() {
           return $(this).val();
       }).get();
       var newOrder = new Pizza(name, size, crust, number, topping);
+
+      //debugging data.....
       //console.log(crust);
       //console.log(size);
       //console.log(topping);
@@ -49,6 +54,13 @@ $(document).ready(function() {
                                 "<li>" + "Price: Ksh" + "<span class = 'total' >" + newOrder.price + "</span>" + "</li>");
         const newTotal = $(".total").map(function(){return $(this).text();}).toArray();
         var grandTotal = new Total(newTotal);
-        console.log (grandTotal);
+        document.querySelector('.totalPrice').innerHTML = grandTotal.number;
+        document.querySelector('#totalPrice').innerHTML = grandTotal.number;
+
+        if ("input#delivery:checked"){
+            document.querySelector('#deliveryPrice').innerHTML = 200;
+        }else{
+            document.querySelector('#deliveryPrice').innerHTML = 0;
+        };
     });
 });

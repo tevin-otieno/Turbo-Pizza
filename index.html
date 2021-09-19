@@ -115,7 +115,26 @@
                     <input class="form-control" type="text" name="location" id="location" placeholder="Mathew street house 45 , nairobi">
                 </div>
                 <button class="btn btn-outline-warning" id="addPizza">Add Pizza to list</button>
-                
+                    <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Turbo Pizza checkout</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Your order goes for</p>
+                                    <p><strong> Ksh <span class="totalPrice">0</span></strong></p>
+                                    <p>Delivery goes for ksh :<span id="deliveryPrice">0</span></p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Clear</button>
+                                  <button type="button" class="btn btn-outline-danger">Pay Up</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
             </form>
         </div>
         <div class="col-md-6">
@@ -123,9 +142,12 @@
             <ul id="pizzaList">
 
             </ul>
-            <p><strong>Total Price: Ksh<span id="totalPrice">0</span></strong></p>
-            <button class="btn btn-outline-danger" id="order" type="submit">Order Now</button>
+            <p><strong>Total Price: Ksh <span id="totalPrice">0</span></strong></p>
+            <button id="order" type="button submit" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Order Now
+              </button>
         </div>
     </div>
+
 </body>
 </html>
