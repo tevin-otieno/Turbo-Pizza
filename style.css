@@ -33,10 +33,11 @@ ul{
     position: absolute;
     z-index: 5;
     top: 8vh;
-    width: 85vw;
+    width: 100%;
     border-radius: 8px;
     background-color: #000;
     padding: 2rem;
+    margin: auto;
 }
 .image-cropper {
     width: 100px;
