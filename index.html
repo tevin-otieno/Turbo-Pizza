@@ -16,40 +16,48 @@
         <div class="col-md-6">
             <form action="" id="pizza-form">
                 <div class="container">
+                    <div class="input-group">
+                        <span class="input-group-text" id="namePizza">Name your pizza?</span>
+                        <input class="form-control" type="text" name="namePizza" id="namePizza" placeholder="Mega Pluss Pizza">
+                    </div>
                     <div class="row">
                         <div class="col">
-                            <p>Size of Pizza</p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="size" id="large" value="1000">
-                                <label class="form-check-label" for="large">Large</label>   
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="size" id="medium" value="800">
-                                <label class="form-check-label" for="medium">Medium</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="size" id="small" value="600">
-                                <label class="form-check-label" for="small">Small</label>
-                            </div>
+                            <h3>Size of Pizza</h3>
+                            <fieldset>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="size" id="large" value="1000">
+                                    <label class="form-check-label" for="large">Large</label>   
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="size" id="medium" value="800">
+                                    <label class="form-check-label" for="medium">Medium</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="size" id="small" value="600">
+                                    <label class="form-check-label" for="small">Small</label>
+                                </div>
+                            </fieldset>
                         </div>
                         <div class="col">
-                            <p>Crust Preference</p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="size" id="crispy" value="1.08">
-                                <label class="form-check-label" for="crispy">Crispy</label>     
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="size" id="stuffed" value="1.2">
-                                <label class="form-check-label" for="stuffed">Stuffed</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="size" id="gluttenFree" value="1.4">
-                                <label class="form-check-label" for="gluttenFree">Glutten free</label>
-                            </div>
+                            <h3>Crust Preference</h3>
+                            <fieldset>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="crust" id="crispy" value="1.08">
+                                    <label class="form-check-label" for="crispy">Crispy</label>     
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="crust" id="stuffed" value="1.2">
+                                    <label class="form-check-label" for="stuffed">Stuffed</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="crust" id="gluttenFree" value="1.4">
+                                    <label class="form-check-label" for="gluttenFree">Glutten free</label>
+                                </div>
+                            </fieldset>
                         </div>
                     </div>
                 </div>
-                <p style="text-align: center;">Toppings</p>
+                <h3 style="text-align: center;">Toppings</h3>
                 <div class="container">
                     <div class="row row-cols-2">
                         <div class="form-check col">
@@ -94,22 +102,29 @@
                         </div>
                     </div>
                 </div>
-                <p>Delivery</p>
-                <div>
-                    <input type="radio" name="" id="">
-                </div>
-                <p>Location</p>
                 <div class="input-group">
-                    <span class="input-group-text" id="basic-addon1">to</span>
+                    <span class="input-group-text" id="numberPizza">How many pizza?</span>
+                    <input class="form-control" type="number" name="numberPizza" id="numberPizza" placeholder="1" max="30" min="1">
+                </div>
+                <div class="form-check">
+                    <label for="delivery">Do you want delivery?</label>
+                    <input type="checkbox" name="delivery" id="delivery">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text" id="location">Location</span>
                     <input class="form-control" type="text" name="location" id="location" placeholder="Mathew street house 45 , nairobi">
                 </div>
-                <button class="btn btn-outline-warning">Another Pizza</button>
-                <button class="btn btn-outline-danger" id="order" type="submit">Order Now</button>
+                <button class="btn btn-outline-warning" id="addPizza">Add Pizza to list</button>
+                
             </form>
         </div>
         <div class="col-md-6">
-            <h1>Pizza</h1>
-            <h3 id="totals"></h3>
+            <h1>Pizza Orders</h1>
+            <ul id="pizzaList">
+
+            </ul>
+            <p id="totalPrice"><strong></strong></p>
+            <button class="btn btn-outline-danger" id="order" type="submit">Order Now</button>
         </div>
     </div>
 </body>
