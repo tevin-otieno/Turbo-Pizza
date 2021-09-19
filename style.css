@@ -28,3 +28,28 @@ ul{
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
 }
+#panelOpen{
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 8vh;
+    width: 85vw;
+    border-radius: 8px;
+    background-color: #000;
+    padding: 2rem;
+}
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+}
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    justify-content: center;
+}

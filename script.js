@@ -64,3 +64,14 @@ $(document).ready(function() {
         };
     });
 });
+
+// toggole the about div to display none or block when clicked
+function sidePanel() {
+    var x = document.getElementById("panelOpen");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+};
+sidePanel();

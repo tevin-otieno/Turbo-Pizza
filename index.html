@@ -12,10 +12,21 @@
     <title>Document</title>
 </head>
 <body class="container glass">
+    <div id="panelOpen">
+        <div class="image-cropper">
+            <img src="./logo/download.jpeg" alt="turbo pizza logo">
+        </div>
+        <h1 style="text-align: center;"><span style="color: red;">Turbo</span><span style="color: yellow;">Pizza</span></h1>
+        <p style="text-align: center;color: white;">To continue using the site press the about button or the close button on the bottom of the page.</p>
+        <p style="text-align: center;color: white;">Turbo pizza is all about making your own custom pizza from the size to the crust and the icing on the cake is all the toppings you can ever dream of can be made why not them all. It can be done.</p>
+        <p style="text-align: center;color: white;">We as the Trubo Pizza pride ourselves and our pizza and we can deliver all the pizza to the requried places within minutes.</p>
+        <p style="text-align: center;color: white;">Enjoy creating you pizza combos and invite a friend to taste your creation.</p>
+        <button type="button" onclick="sidePanel()" class="btn btn-outline-danger">Close</button>
+    </div>
     <div class="position-relative">
-        <h1>Turbo Pizza</h1>
+        <h1><span style="color: red;">Turbo</span><span style="color: yellow;">Pizza</span></h1>
         <div class="position-absolute top-0 end-0"s>
-            <button type="button" class="btn btn-outline-danger">About</button>
+            <button type="button" onclick="sidePanel()" class="btn btn-outline-danger">About</button>
         </div>
     </div>
     <div class="row">
@@ -146,7 +157,7 @@
             </form>
         </div>
         <div class="col-md-6">
-            <h1>Pizza Orders</h1>
+            <h1><span style="color: yellow;">Pizza</span><span style="color: red;">Orders</span></h1>
             <ul id="pizzaList">
 
             </ul>
