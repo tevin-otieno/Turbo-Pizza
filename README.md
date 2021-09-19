@@ -17,3 +17,17 @@ To use this website you need ofcourse your pc or mobile launch a browser then cl
 ## Milestones passed
 
 Realy understood the mechanism that javascript classes in use and the jquery selector. There was this talk that I heard that programming is all about selectors, conditions and looping. There was also a discovery of the bootstrap popup window under the modal window
+
+Also learned on how to use fuction constructor and fuction prototyping to make objects access the objects and making functions in the key objects. Also lernt the on event that could be undled with the jquery library. Also dubled down on the reduce method.
+
+## Technologies used
+
+This website was built by the use of HTML5, CSS3, Jquery, JavaScript and Bootstrap code and ofcourse the images contained in the assets folder.
+
+## Support and contact details
+
+For contact details please reach out to [tevin.otieno@student.moringaschool.com](tevin.otieno@student.moringaschool.com)
+
+### License
+
+see [here](LICENSE) for more information.
