@@ -45,7 +45,8 @@ $(document).ready(function() {
 
       //this makes the orders apper on the right side off the list for viewing 
       $("ul#pizzaList").append("<li><h3 class='orderlist'>" + newOrder.name + "</h3></li>"+
-                                "<li>" + $("input[name='size']:checked").next().text() + " and " + $("input[name='crust']:checked").next().text() + "</li>" +
+                                "<li>" + $("input[name='size']:checked").next().text() +
+                                " and " + $("input[name='crust']:checked").next().text() + "</li>" +
                                 "<li><span>" + $("input:checkbox:checked").map(function(){
                                     return $(this).next().text();
                                 }).get() + "</span></li>" + 
@@ -74,3 +75,8 @@ function sidePanel() {
     }
 };
 sidePanel();
+
+$('#pay').click(function(){
+    $('#toggleOrder').hide();
+    $('#toggleFinal').show();
+});

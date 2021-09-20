@@ -54,3 +54,6 @@ img {
     width: auto;
     justify-content: center;
 }
+#toggleFinal{
+    display: none;
+}
