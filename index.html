@@ -123,14 +123,6 @@
                     <span class="input-group-text" id="numberPizza">How many pizza?</span>
                     <input class="form-control" type="number" name="numberPizza" id="numberPizza" placeholder="1" max="30" min="1">
                 </div>
-                <div class="form-check">
-                    <label for="delivery">Do you want delivery?</label>
-                    <input type="checkbox" name="delivery" id="delivery">
-                </div>
-                <div class="input-group">
-                    <span class="input-group-text" id="location">Location</span>
-                    <input class="form-control" type="text" name="location" id="location" placeholder="Mathew street house 45 , nairobi">
-                </div>
                 <div class="mt-3">
                     <button class="btn btn-outline-warning" id="addPizza">Add Pizza to list</button>
                 </div>
@@ -143,9 +135,19 @@
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Your order goes for</p>
-                                    <p><strong> Ksh <span class="totalPrice">0</span></strong></p>
-                                    <p>Delivery goes for ksh :<span id="deliveryPrice">0</span></p>
+                                    <p>Your order goes for<strong> Ksh <span class="totalPrice">0</span></strong></p>
+                                    <p>Do you want delivery</p>
+                                    <div class="mb-3">
+                                        <input type="radio" class="btn-check" name="delivery" id="delivery" autocomplete="off">
+                                        <label class="btn btn-outline-success" for="delivery">Yes</label>
+                                        <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                                        <label class="btn btn-outline-danger" for="danger-outlined">No</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="location" placeholder="Mathew street house 45 , nairobi">
+                                        <label for="location">Destination</label>
+                                    </div>
+                                    <p>Delivery goes for ksh :<span id="deliveryPrice">0</span></p>                                    
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Clear</button>
